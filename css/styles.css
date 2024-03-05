@@ -46,7 +46,7 @@ html {
   }
   
   .titulo {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
@@ -245,8 +245,8 @@ html {
     margin: 0 auto;
   }
   .main .proyectos {
-    padding: 1rem 0;
-    margin-bottom: 1rem;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
   }
   .main .proyectos .contenedor-proyectos {
     display: grid;
