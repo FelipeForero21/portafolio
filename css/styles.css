@@ -245,8 +245,8 @@ html {
     margin: 0 auto;
   }
   .main .proyectos {
-    padding: 2rem 0;
-    margin-bottom: 3rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
   }
   .main .proyectos .contenedor-proyectos {
     display: grid;
