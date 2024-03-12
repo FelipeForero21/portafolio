@@ -334,8 +334,8 @@ h2 {
   position: relative;
   width: 18.75rem;
   height: 25rem;
-  background: #262626;
   overflow: hidden;
+  border-radius: 20px;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta input,
 .main .conocimientos .contenedor .contenedor-conocimientos .tarjeta .cambio {
