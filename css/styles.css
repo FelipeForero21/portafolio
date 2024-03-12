@@ -103,6 +103,8 @@ html {
   .main .proyectos .contenedor-proyectos .proyecto .foto a img {
     filter: grayscale(0);
     transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+
   }
   .main .proyectos .contenedor-proyectos .proyecto .foto a img:hover {
     filter: grayscale(100);
@@ -250,30 +252,37 @@ html {
   }
   .main .proyectos {
     padding: 3rem 0;
+    
     margin-bottom: 3rem;
   }
   .main .proyectos .contenedor-proyectos {
+    
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
+    
   }
   .main .proyectos .contenedor-proyectos .proyecto {
+    
     margin: auto;
     width: 250px;
     height: 350px;
   }
+
+  
   .main .proyectos .contenedor-proyectos .proyecto .info {
-    padding: 1rem 0.5rem;
+    padding: 1.5rem;
     height: 10.625rem;
-    background: #ffffff;
+    border-radius: 10px;
+    background: #ccc;
     color: #000000;
     border: 0.125rem solid #969a97;
   }
   .main .proyectos .contenedor-proyectos .proyecto .info h4 {
     text-align: left;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1rem;
     font-size: 1.3rem;
   }
   .main .proyectos .contenedor-proyectos .proyecto .info h5 {
