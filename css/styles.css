@@ -615,30 +615,37 @@ html {
 
 
 
-.card {
-  width: 250px;
-  margin: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-text {
-  padding: 20px;
-}
-
-.card-text h2 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.card-text p {
-  margin-bottom: 0;
-  font-size: 1em;
-}
+  .card {
+    width: 250px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #ccc;
+    transition: transform 0.3s ease; 
+  }
+  
+  .card:hover img {
+    transform: scale(1.1);
+  }
+  
+  .card-text {
+    padding: 20px;
+  }
+  
+  .card-text h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+  }
+  
+  .card-text p {
+    margin-bottom: 0;
+    font-size: 1em;
+  }
+  
