@@ -45,6 +45,10 @@ html {
     padding: 0;
   }
   
+  h2{
+    display: flex;
+    justify-content: center;
+  }
   .titulo {
     margin-bottom: 4rem;
     text-align: center;
@@ -599,3 +603,42 @@ html {
     background-color: #c90c0f; /* Color de fondo al pasar el ratón sobre el botón */
   }
   
+
+
+
+
+
+
+
+
+
+
+
+
+.card {
+  width: 250px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  padding: 20px;
+}
+
+.card-text h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.card-text p {
+  margin-bottom: 0;
+  font-size: 1em;
+}
