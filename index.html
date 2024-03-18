@@ -134,11 +134,15 @@
 
 
         </section>
+        <br><br><br>
+        <center><button id="btnAbrirModal">Actividades Del Profesor Robinson, Accede dando <img src="/img/actividades/hacer-clic.png" width="30px" height="30px"> aqui.</button></center>
 
-        <section class="proyectos">
-            <h2 class="titulo" id="proyectos">Actividades Realizadas</h2>
-            <br><br>
-            <div class="contenedor contenedor-proyectos">
+        <section id="modal" class="modal">
+            <div class="modal-contenido">
+                <span class="cerrar-modal" id="cerrarModal">&times;</span>
+                <h2>Actividades Realizadas del Profesor Robinson</h2>
+                <br><br>
+            
 
                 <div class="card">
                     <a href="https://github.com/FelipeForero21/bases_de_datos/blob/Clase_1/riwi.sql"
@@ -197,8 +201,27 @@
                         <h2>Actividad 8</h2>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        
+        <section class="proyectos">
+            <h2 class="titulo" id="proyectos">Actividades Realizadas del Profesor Alberto</h2>
+            <br><br>
+            <div class="contenedor contenedor-proyectos">
+
+                <div class="card">
+                    <a href="https://felipeforero21.github.io/usuarioynotas-metodopostyfind-/src/"
+                        target="_blank"><img src="img/semana/Semana1.jpg" alt=""></a>
+                    <div class="card-text">
+                        <h2>Semana 1</h2>
+                    </div>
+                </div>
+
+
 
         </section>
+
 
         <div class="conocimientos">
             <h2 class="titulo" id="conocimientos">Habilidades tecnológicas</h2>
@@ -382,7 +405,7 @@
         <p class="autor">Felipe Forero - 2024</p>
         <span><i class="boton-arriba fa fa-chevron-up" id="boton-arriba" aria-hidden="true"></i></span>
     </footer>
-
+    <script src="/js/modal.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="js/main.js"></script>
