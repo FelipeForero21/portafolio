@@ -673,6 +673,7 @@ button:hover {
 .card-text h2 {
   margin-top: 0;
   font-size: 1.2em;
+  text-align: center;
 }
 
 .card-text p {
