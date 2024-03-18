@@ -51,12 +51,130 @@ p {
   padding: 0;
 }
 
+.tituloh2,
+.tituloh3 {
+  background-image: linear-gradient(
+    90deg,
+    #ffe2c0,
+    #ffbaf2 20%,
+    #e0c2ff 40%,
+    #c3dbff 60%,
+    #b7fffa 80%,
+    #e3ffbe
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+
+/* Color/UI color variables */
+:root {
+  --white: #ececec;
+  --black: #ececec;
+  --red1: #ececec;
+  --red2: #ececec;
+  --colorPrimary: var(--red1);
+  --colorSecondary: var(--red2);
+  --cubic-bezier: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* Split button mixin */
+@keyframes topAnimation {
+  from {
+    transform: translate(0rem, 0);
+  }
+  to {
+    transform: translate(0rem, 3.5rem);
+  }
+}
+
+@keyframes bottomAnimation {
+  from {
+    transform: translate(-11.5rem, 0);
+  }
+  to {
+    transform: translate(0rem, 0);
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  border: 0;
+  /*display: block;*/
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  color: var(--black);
+  transition: all 0.5s var(--cubic-bezier) 0.15s;
+}
+
+.btn::after,
+.btn::before {
+  border: 0;
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  transition: all 0.5s var(--cubic-bezier);
+  z-index: -2;
+  border-radius: 50%;
+  /*animation: grow 1s infinite;*/
+}
+
+.btn::before {
+  border: 0;
+  background-color: var(--colorSecondary);
+  top: -0.75rem;
+  left: 0.5rem;
+  animation: topAnimation 2s var(--cubic-bezier) 0.25s infinite alternate;
+}
+
+.btn::after {
+  background-color: var(--colorPrimary);
+  top: 3rem;
+  left: 13rem;
+  animation: bottomAnimation 2s var(--cubic-bezier) 0.5s infinite alternate;
+}
+
+.btn:hover {
+  color: black !important;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  animation: none;
+}
+
+.btn:hover::after {
+  left: 0rem;
+}
+
+.btn:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}
+
+
+
 h2 {
   display: flex;
   justify-content: center;
 }
 .titulo {
-  color: #ffffff; 
+  color: #ffffff;
   text-align: center;
   margin-bottom: 20px;
   text-align: center;
@@ -605,8 +723,6 @@ h2 {
   border-radius: 10px;
 }
 
-
-
 .campo {
   margin-bottom: 20px;
 }
@@ -631,8 +747,8 @@ textarea {
   height: 150px; /* Altura del textarea */
 }
 
-button {
-  background-color: #e80000; /* Color de fondo del botón */
+#btnAbrirModal {
+  background-image: linear-gradient(90deg, #4becf0, #620dbc, #fb00ff);
   color: #ffffff; /* Color del texto del botón */
   padding: 10px 20px;
   border: none;
@@ -642,12 +758,11 @@ button {
   font-weight: bold;
 }
 
-button:hover {
-  background-color: #c90c0f; /* Color de fondo al pasar el ratón sobre el botón */
+#btnAbrirModal:hover {
+  background: -webkit-linear-gradient(left, #0bb6e1, #25eda1);
 }
 
 .card {
-  
   width: 250px;
   margin: 20px;
   border: 1px solid #ccc;
@@ -681,14 +796,6 @@ button:hover {
   margin-bottom: 0;
   font-size: 1em;
 }
-
-
-
-
-
-
-
-
 
 .modal {
   display: none;
@@ -727,8 +834,3 @@ button:hover {
   color: rgb(255, 0, 0);
   text-decoration: none;
 }
-
-
-
-
-
